@@ -1,0 +1,199 @@
+12:25:32 **** Incremental Build of configuration Debug for project CAN_F3 ****
+make all 
+Building file: C:/PM/PM/stm32workspace/CAN_F3/Src/main.c
+Invoking: MCU GCC Compiler
+C:\PM\PM\stm32workspace\CAN_F3\SW4STM32\CAN_F3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F303xE -I"C:/PM/PM/stm32workspace/CAN_F3/Inc" -I"C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F3/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F3/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" -o "Application/User/main.o" "C:/PM/PM/stm32workspace/CAN_F3/Src/main.c"
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c: In function 'CAN_Rx':
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:77:8: warning: suggest parentheses around operand of '!' or change '&' to '&&' or '!' to '~' [-Wparentheses]
+  while(!CAN->RF0R&3);
+        ^~~~~~~~~~
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c: In function 'main':
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:133:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   j=sprintf(tab,"START\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+             ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:139:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   j=sprintf(tab,"1\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+             ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:177:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    j=sprintf(tab,"error0\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+              ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:183:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    j=sprintf(tab,"error\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+              ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:217:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    j=sprintf(tab,"error1\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+              ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:223:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    j=sprintf(tab,"error2\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+              ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:228:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    j=sprintf(tab,"error\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+              ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:233:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    j=sprintf(tab,"error3\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+              ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:238:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    j=sprintf(tab,"error4\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+              ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:241:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   j=sprintf(tab,"9\n",i); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+             ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:241:17: warning: too many arguments for format [-Wformat-extra-args]
+   j=sprintf(tab,"9\n",i); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+                 ^~~~~
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:247:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    j=sprintf(tab,"can[0]=%i can[1]=%i\n",RxMessage.Data[0],RxMessage.Data[1]); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+              ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:250:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   j=sprintf(tab,"Koniec!\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+             ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:299:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+     j=sprintf(tab,"error5\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+               ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:303:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+     j=sprintf(tab,"CANval: %i %i\n",CanHandle.pRxMsg->Data[0],CanHandle.pRxMsg->Data[7]); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+               ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Inc/stm32f3xx_hal_conf.h:196,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/CAN_F3/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+Finished building: C:/PM/PM/stm32workspace/CAN_F3/Src/main.c
+ 
+Building target: CAN_F3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F303RETx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "CAN_F3.elf" @"objects.list"   -lm
+Finished building target: CAN_F3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "CAN_F3.elf" "CAN_F3.bin"
+arm-none-eabi-size "CAN_F3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  11468	    112	   1896	  13476	   34a4	CAN_F3.elf
+ 
+
+12:25:35 Build Finished (took 3s.133ms)
+
