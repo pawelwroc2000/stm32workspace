@@ -1,4 +1,4 @@
-12:36:06 **** Incremental Build of configuration Debug for project CAN_F302R8 ****
+16:55:26 **** Incremental Build of configuration Debug for project CAN_F302R8 ****
 make all 
 Building file: C:/PM/PM/stm32workspace/CAN_F302R8/Src/main.c
 Invoking: MCU GCC Compiler
@@ -159,7 +159,7 @@ In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.ar
 c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
  int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
      ^
-C:/PM/PM/stm32workspace/CAN_F302R8/Src/main.c:294:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+C:/PM/PM/stm32workspace/CAN_F302R8/Src/main.c:296:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
      j=sprintf(tab,"Send %i\n",i);
                ^~~
 In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
@@ -171,7 +171,7 @@ In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.ar
 c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
  int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
      ^
-C:/PM/PM/stm32workspace/CAN_F302R8/Src/main.c:300:16: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+C:/PM/PM/stm32workspace/CAN_F302R8/Src/main.c:302:16: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
       j=sprintf(tab,"error\n"); if(HAL_UART_Transmit(&huart2, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
                 ^~~
 In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
@@ -184,7 +184,7 @@ c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.20
  int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
      ^
 C:/PM/PM/stm32workspace/CAN_F302R8/Src/main.c: In function 'SystemClock_Config':
-C:/PM/PM/stm32workspace/CAN_F302R8/Src/main.c:336:28: warning: unused variable 'PeriphClkInit' [-Wunused-variable]
+C:/PM/PM/stm32workspace/CAN_F302R8/Src/main.c:338:28: warning: unused variable 'PeriphClkInit' [-Wunused-variable]
    RCC_PeriphCLKInitTypeDef PeriphClkInit;
                             ^~~~~~~~~~~~~
 Finished building: C:/PM/PM/stm32workspace/CAN_F302R8/Src/main.c
@@ -199,8 +199,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "CAN_F302R8.elf" "CAN_F302R8.bin"
 arm-none-eabi-size "CAN_F302R8.elf"
    text	   data	    bss	    dec	    hex	filename
-  10260	    112	   1896	  12268	   2fec	CAN_F302R8.elf
+  10232	    112	   1896	  12240	   2fd0	CAN_F302R8.elf
  
 
-12:36:09 Build Finished (took 3s.48ms)
+16:55:29 Build Finished (took 3s.224ms)
 

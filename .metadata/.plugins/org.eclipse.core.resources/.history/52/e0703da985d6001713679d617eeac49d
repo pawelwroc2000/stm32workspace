@@ -74,7 +74,7 @@ void CAN_Tx(unsigned char data)
 
 unsigned char CAN_Rx(void)
 {
-	while(!CAN->RF0R&3);
+	while(!(CAN->(RF0R&3)));
 	unsigned char RxD=(CAN->sFIFOMailBox[0].RDLR)&0xFF;
 	CAN->RF0R|=1<<5;
 	return RxD;
@@ -279,9 +279,8 @@ int main(void)
 	  CanHandle.pTxMsg->StdId = 0x11;
 	  CanHandle.pTxMsg->RTR = CAN_RTR_DATA;
 	  CanHandle.pTxMsg->IDE = CAN_ID_STD;
-	  CanHandle.pTxMsg->DLC = 1;
-	  CanHandle.pTxMsg->Data[0] = 66;
-	  /*
+	  CanHandle.pTxMsg->DLC = 8;
+	  CanHandle.pTxMsg->Data[0] = i;
 	  CanHandle.pTxMsg->Data[1] = i;
 	  CanHandle.pTxMsg->Data[2] = i;
 	  CanHandle.pTxMsg->Data[3] = i;
@@ -289,7 +288,7 @@ int main(void)
 	  CanHandle.pTxMsg->Data[5] = i;
 	  CanHandle.pTxMsg->Data[6] = i;
 	  CanHandle.pTxMsg->Data[7] = i;
-*/
+
 
 	  if(HAL_CAN_Transmit(&CanHandle, 50) == HAL_OK)
 	  {
@@ -378,6 +377,7 @@ _Error_Handler(__FILE__, __LINE__);
 }
 
 /* CAN init function */
+
 static void MX_CAN_Init(void)
 {
 
