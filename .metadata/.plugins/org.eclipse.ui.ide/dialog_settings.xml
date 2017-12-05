@@ -5,6 +5,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\PM\PM\STM32\STM32Cube_FW_F7_V1.8.0\Projects\STM32F767ZI-Nucleo"/>
+			<item value="C:\PM\PM\stm32workspace\can_f7_dual"/>
 			<item value="C:\PM\PM\stm32workspace\CAN_F302R8"/>
 			<item value="C:\PM\PM\stm32workspace\CAN_F3"/>
 		</list>

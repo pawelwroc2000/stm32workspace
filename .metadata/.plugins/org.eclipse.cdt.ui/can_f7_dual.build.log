@@ -1,0 +1,27 @@
+18:01:23 **** Incremental Build of configuration Debug for project can_f7_dual ****
+make all 
+Building file: C:/PM/PM/stm32workspace/can_f7_dual/Src/main.c
+Invoking: MCU GCC Compiler
+C:\PM\PM\stm32workspace\can_f7_dual\SW4STM32\can_f7_dual\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F767xx -I"C:/PM/PM/stm32workspace/can_f7_dual/Inc" -I"C:/PM/PM/stm32workspace/can_f7_dual/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/can_f7_dual/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/can_f7_dual/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/PM/PM/stm32workspace/can_f7_dual/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/can_f7_dual/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" -o "Application/User/main.o" "C:/PM/PM/stm32workspace/can_f7_dual/Src/main.c"
+C:/PM/PM/stm32workspace/can_f7_dual/Src/main.c: In function 'main':
+C:/PM/PM/stm32workspace/can_f7_dual/Src/main.c:114:10: warning: 'j' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    tab[0]=++j;
+    ~~~~~~^~~~
+Finished building: C:/PM/PM/stm32workspace/can_f7_dual/Src/main.c
+ 
+Building target: can_f7_dual.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F767ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "can_f7_dual.elf" @"objects.list"   -lm
+Finished building target: can_f7_dual.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "can_f7_dual.elf" "can_f7_dual.bin"
+arm-none-eabi-size "can_f7_dual.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8020	     12	   1820	   9852	   267c	can_f7_dual.elf
+ 
+
+18:01:26 Build Finished (took 2s.566ms)
+
