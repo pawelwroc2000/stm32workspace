@@ -1,6 +1,72 @@
-16:05:19 **** Incremental Build of configuration Debug for project 767can2 ****
+16:27:49 **** Incremental Build of configuration Debug for project 767can2 ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: C:/PM/PM/stm32workspace/767can2/Src/main.c
+Invoking: MCU GCC Compiler
+C:\PM\PM\stm32workspace\767can2\SW4STM32\767can2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F767xx -I"C:/PM/PM/stm32workspace/767can2/Inc" -I"C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/767can2/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/PM/PM/stm32workspace/767can2/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/767can2/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" -o "Application/User/main.o" "C:/PM/PM/stm32workspace/767can2/Src/main.c"
+C:/PM/PM/stm32workspace/767can2/Src/main.c: In function 'main':
+C:/PM/PM/stm32workspace/767can2/Src/main.c:150:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+     j=sprintf(tab,"CAN 1 send %5i\n",i++);
+               ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:48,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/767can2/Inc/stm32f7xx_hal_conf.h:244,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/767can2/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/767can2/Src/main.c:156:16: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+      j=sprintf(tab,"!!! CAN 1 Not send !!!\n"); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+                ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:48,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/767can2/Inc/stm32f7xx_hal_conf.h:244,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/767can2/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/767can2/Src/main.c:164:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+     j=sprintf(tab,"CAN 3 rece %5i\n",RxMessageCAN3.Data[0]);
+               ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:48,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/767can2/Inc/stm32f7xx_hal_conf.h:244,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/767can2/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/767can2/Src/main.c:171:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+     j=sprintf(tab,"!!! CAN 2 receive error !!!\n"); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+               ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:48,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/767can2/Inc/stm32f7xx_hal_conf.h:244,
+                 from C:/PM/PM/stm32workspace/767can2/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/767can2/Src/main.c:41:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+Finished building: C:/PM/PM/stm32workspace/767can2/Src/main.c
+ 
+Building target: 767can2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F767ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "767can2.elf" @"objects.list"   -lm
+Finished building target: 767can2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "767can2.elf" "767can2.bin"
+arm-none-eabi-size "767can2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  12280	    112	   2040	  14432	   3860	767can2.elf
+ 
 
-16:05:20 Build Finished (took 445ms)
+16:27:52 Build Finished (took 3s.549ms)
 

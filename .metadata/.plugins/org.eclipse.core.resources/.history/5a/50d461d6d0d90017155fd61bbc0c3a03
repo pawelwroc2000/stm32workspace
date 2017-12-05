@@ -156,8 +156,25 @@ int main(void)
 			  j=sprintf(tab,"!!! CAN 1 Not send !!!\n"); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
 	  };
 
+	  // Reception process
+	  if(HAL_CAN_Receive(&hcan1, CAN_FIFO0,10) == HAL_OK)
+	  {
+		  j=sprintf(tab,"CAN 1 rece %5i\n",RxMessageCAN1.Data[0]);
+		  if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+	//	  HAL_GPIO_TogglePin(GPIOB, LD2_Pin);
+	  }
+	  else
+	  {
+	    /* Reception Error */
+		  j=sprintf(tab,"!!! CAN 1 receive error !!!\n"); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+	  }
+
+
+
 
 	  HAL_Delay(1);
+
+
 
 	  if(HAL_CAN_Receive(&hcan3, CAN_FIFO0,10) == HAL_OK)
 	  {
@@ -170,6 +187,23 @@ int main(void)
 	    /* Reception Error */
 		  j=sprintf(tab,"!!! CAN 2 receive error !!!\n"); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
 	  }
+
+	  TxMessageCAN3.StdId=0x22;
+	  TxMessageCAN3.RTR=CAN_RTR_DATA;
+	  TxMessageCAN3.IDE=CAN_ID_STD;
+	  TxMessageCAN3.DLC=1;
+	  TxMessageCAN3.Data[0]=--k;
+
+	  if(HAL_CAN_Transmit(&TxMessageCAN3, 10) == HAL_OK)
+	  {
+		  j=sprintf(tab,"CAN 3 send %5i\n",k);
+		  if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+		 // HAL_GPIO_TogglePin(GPIOB, LD3_Pin); //red
+	  }
+	  else
+	  {
+			  j=sprintf(tab,"!!! CAN 2 Not send !!!\n"); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+	  };
 
 
 	  HAL_Delay(20);

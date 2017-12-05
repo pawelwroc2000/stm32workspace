@@ -52,9 +52,9 @@ UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-unsigned char i,j,k,RxData,tab[60];
-CanTxMsgTypeDef        TxMessageCAN1,TxMessageCAN3;
-CanRxMsgTypeDef        RxMessageCAN1,RxMessageCAN3;
+unsigned char i,j,RxData,tab[60];
+CanTxMsgTypeDef        TxMessageCAN1,TxMessageCAN2;
+CanRxMsgTypeDef        RxMessageCAN1,RxMessageCAN2;
 
 /* USER CODE END PV */
 
@@ -104,10 +104,10 @@ int main(void)
   MX_CAN3_Init();
 
   /* USER CODE BEGIN 2 */
-
   CAN_FilterConfTypeDef  sFilterConfig;
+  CAN_FilterConfTypeDef  sFilterConfig2;
 
-  // Configure the CAN Filter ###########################################
+  //##-2- Configure the CAN Filter ###########################################
   sFilterConfig.FilterNumber = 0;
   sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;
   sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT;
@@ -125,12 +125,11 @@ int main(void)
   hcan1.pTxMsg=&TxMessageCAN1;
   hcan1.pRxMsg=&RxMessageCAN1;
 
-  hcan3.pTxMsg=&TxMessageCAN3;
-  hcan3.pRxMsg=&RxMessageCAN3;
+  hcan3.pTxMsg=&TxMessageCAN2;
+  hcan3.pRxMsg=&RxMessageCAN2;
 
   HAL_CAN_Init(&hcan1);
   HAL_CAN_Init(&hcan3);
-  k=255;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -153,15 +152,16 @@ int main(void)
 	  }
 	  else
 	  {
+		    /* Transmission Error */
 			  j=sprintf(tab,"!!! CAN 1 Not send !!!\n"); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
 	  };
 
-
 	  HAL_Delay(1);
 
+	  // Reception process
 	  if(HAL_CAN_Receive(&hcan3, CAN_FIFO0,10) == HAL_OK)
 	  {
-		  j=sprintf(tab,"CAN 3 rece %5i\n",RxMessageCAN3.Data[0]);
+		  j=sprintf(tab,"CAN 2 rece %5i\n",hcan3.pRxMsg->Data[0]);
 		  if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
 		  HAL_GPIO_TogglePin(GPIOB, LD2_Pin);
 	  }
