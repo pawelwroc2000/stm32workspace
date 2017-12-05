@@ -157,9 +157,6 @@ int main(void)
 	  };
 
 
-	  __HAL_RCC_CAN1_CLK_ENABLE();
-
-
 	  HAL_Delay(1);
 
 	  if(HAL_CAN_Receive(&hcan3, CAN_FIFO0,10) == HAL_OK)
