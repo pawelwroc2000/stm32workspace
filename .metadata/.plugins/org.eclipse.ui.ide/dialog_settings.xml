@@ -5,6 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\PM\PM\stm32workspace\767canIT"/>
 			<item value="C:\PM\PM\stm32workspace\767can2"/>
 			<item value="C:\PM\PM\stm32workspace\767uart"/>
 			<item value="C:\PM\PM\STM32\STM32Cube_FW_F7_V1.8.0\Projects\STM32F767ZI-Nucleo"/>
