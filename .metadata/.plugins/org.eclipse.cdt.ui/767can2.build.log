@@ -1,4 +1,4 @@
-16:27:49 **** Incremental Build of configuration Debug for project 767can2 ****
+13:20:30 **** Incremental Build of configuration Debug for project 767can2 ****
 make all 
 Building file: C:/PM/PM/stm32workspace/767can2/Src/main.c
 Invoking: MCU GCC Compiler
@@ -29,7 +29,7 @@ In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.ar
 c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
  int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
      ^
-C:/PM/PM/stm32workspace/767can2/Src/main.c:164:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+C:/PM/PM/stm32workspace/767can2/Src/main.c:167:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
      j=sprintf(tab,"CAN 3 rece %5i\n",RxMessageCAN3.Data[0]);
                ^~~
 In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
@@ -41,7 +41,7 @@ In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.ar
 c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
  int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
      ^
-C:/PM/PM/stm32workspace/767can2/Src/main.c:171:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+C:/PM/PM/stm32workspace/767can2/Src/main.c:174:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
      j=sprintf(tab,"!!! CAN 2 receive error !!!\n"); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
                ^~~
 In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
@@ -65,8 +65,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "767can2.elf" "767can2.bin"
 arm-none-eabi-size "767can2.elf"
    text	   data	    bss	    dec	    hex	filename
-  12280	    112	   2040	  14432	   3860	767can2.elf
+  12304	    112	   2040	  14456	   3878	767can2.elf
  
 
-16:27:52 Build Finished (took 3s.549ms)
+13:20:34 Build Finished (took 3s.765ms)
 

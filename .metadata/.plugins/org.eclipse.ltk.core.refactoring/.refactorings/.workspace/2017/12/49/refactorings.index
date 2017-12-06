@@ -1,3 +1,5 @@
 1512475247786	Delete resource 'can_f7_dual'
 1512475276121	Delete resource '767uart'
 1512485955319	Delete resource '767can2'
+1512562244128	Delete resource '767uart'
+1512562253109	Delete resource 'STM32F767ZI-Nucleo'
