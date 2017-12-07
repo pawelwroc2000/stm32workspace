@@ -1,0 +1,48 @@
+14:05:52 **** Incremental Build of configuration Debug for project 767ZI_uart_dma_circular_test ****
+make all 
+Building file: C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Src/main.c
+Invoking: MCU GCC Compiler
+C:\PM\PM\stm32workspace\767ZI_uart_dma_circular_test\SW4STM32\767ZI_uart_dma_circular_test\Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F767xx -I"C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Inc" -I"C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Drivers/STM32F7xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Drivers/CMSIS/Device/ST/STM32F7xx/Include" -I"C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1" -I"C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" -o "Application/User/main.o" "C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Src/main.c"
+C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Src/main.c: In function 'StartTaskUartReceive':
+C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Src/main.c:337:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    j=sprintf(tab,"BUFFER: \n"); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+              ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:48,
+                 from C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Inc/stm32f7xx_hal_conf.h:244,
+                 from C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Src/main.c:51:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Src/main.c:340:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+     j=sprintf(tab,"%02X \n",rx_dma_circ_buf[i]); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,50)!= HAL_OK) Error_Handler();
+               ^~~
+In file included from c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:29:0,
+                 from C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:48,
+                 from C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:45,
+                 from C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Inc/stm32f7xx_hal_conf.h:244,
+                 from C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:46,
+                 from C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Src/main.c:51:
+c:\ac6\systemworkbench\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556\tools\compiler\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+Finished building: C:/PM/PM/stm32workspace/767ZI_uart_dma_circular_test/Src/main.c
+ 
+Building target: 767ZI_uart_dma_circular_test.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F767ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "767ZI_uart_dma_circular_test.elf" @"objects.list"   -lm
+Finished building target: 767ZI_uart_dma_circular_test.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "767ZI_uart_dma_circular_test.elf" "767ZI_uart_dma_circular_test.bin"
+arm-none-eabi-size "767ZI_uart_dma_circular_test.elf"
+   text	   data	    bss	    dec	    hex	filename
+  16064	    116	  17660	  33840	   8430	767ZI_uart_dma_circular_test.elf
+ 
+
+14:05:56 Build Finished (took 3s.885ms)
+
