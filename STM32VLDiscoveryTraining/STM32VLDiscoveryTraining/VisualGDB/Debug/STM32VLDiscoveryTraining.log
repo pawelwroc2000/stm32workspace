@@ -1,0 +1,19 @@
+﻿Build started 2017-12-13 18:17:46.
+     1>Project "C:\PM\PM\VisualGDB\STM32VLDiscoveryTraining\STM32VLDiscoveryTraining\STM32VLDiscoveryTraining.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         LEDBlink.c
+         C:\SysGCC\arm-eabi\bin\arm-eabi-gcc.exe -mthumb -mcpu=cortex-m3 -IC:/PM/PM/VisualGDB/STM32VLDiscoveryTraining/STM32VLDiscoveryTraining/ -IC:/Users/ep13009/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_StdPeriph/CM3/DeviceSupport/ST/STM32F10x -ggdb -O0 -DARM_MATH_CM3 -DSTM32F100RB -DDEBUG=1  -DSTM32F10X_MD_VL -DDEBUG=1 -ffunction-sections -fdata-sections   -c "LEDBlink.c" -o "VisualGDB/Debug/LEDBlink.o" -MD -MP -MF "VisualGDB/Debug/LEDBlink.dep"
+       Link:
+         C:\SysGCC\arm-eabi\bin\arm-eabi-g++.exe -o ../VisualGDB/Debug/STM32VLDiscoveryTraining -Wl,-gc-sections -TC:/Users/ep13009/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F1xxxx/LinkerScripts/STM32F100RB_flash.lds --specs=nano.specs --specs=nosys.specs  -mthumb -mcpu=cortex-m3  -Wl,--start-group VisualGDB/Debug/core_cm3.o VisualGDB/Debug/LEDBlink.o VisualGDB/Debug/system_stm32f1xx.o VisualGDB/Debug/startup_stm32f100xb.o -Wl,--end-group
+         Linking ../VisualGDB/Debug/STM32VLDiscoveryTraining...
+       GenerateBinFile:
+         C:\SysGCC\arm-eabi\bin\arm-eabi-objcopy.exe  -O binary C:/PM/PM/VisualGDB/STM32VLDiscoveryTraining/VisualGDB/Debug/STM32VLDiscoveryTraining ../VisualGDB/Debug/STM32VLDiscoveryTraining.bin
+       OutputMemoryUtilization:
+         ------------------- Memory utilization report -------------------
+         Used FLASH: 1008 bytes out of 128KB (0%) [+12]
+         Used RAM: 28 bytes out of 8192 bytes (0%)
+     1>Done Building Project "C:\PM\PM\VisualGDB\STM32VLDiscoveryTraining\STM32VLDiscoveryTraining\STM32VLDiscoveryTraining.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.73

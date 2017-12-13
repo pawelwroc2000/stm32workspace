@@ -99,7 +99,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_CAN1_Init();
+ // MX_CAN1_Init();
   MX_USART3_UART_Init();
   MX_CAN3_Init();
 
@@ -117,20 +117,21 @@ int main(void)
   sFilterConfig.FilterMaskIdLow = 0x0000;
   sFilterConfig.FilterFIFOAssignment = 0;
   sFilterConfig.FilterActivation = ENABLE;
-  sFilterConfig.BankNumber = 14;
+  sFilterConfig.BankNumber = 0;
 
-  HAL_CAN_ConfigFilter(&hcan1,&sFilterConfig);
+ // HAL_CAN_ConfigFilter(&hcan1,&sFilterConfig);
   HAL_CAN_ConfigFilter(&hcan3,&sFilterConfig);
 
-  hcan1.pTxMsg=&TxMessageCAN1;
-  hcan1.pRxMsg=&RxMessageCAN1;
+//  hcan1.pTxMsg=&TxMessageCAN1;
+//  hcan1.pRxMsg=&RxMessageCAN1;
 
   hcan3.pTxMsg=&TxMessageCAN3;
   hcan3.pRxMsg=&RxMessageCAN3;
 
-  HAL_CAN_Init(&hcan1);
-  HAL_CAN_Init(&hcan3);
   k=255;
+
+  j=sprintf(tab,"START...\n",i++); HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -138,6 +139,7 @@ int main(void)
   while (1)
   {
 
+/*
 	  // Send process
 	  hcan1.pTxMsg->StdId = 0x11;
 	  hcan1.pTxMsg->RTR = CAN_RTR_DATA;
@@ -157,21 +159,21 @@ int main(void)
 	  };
 
 
-	  __HAL_RCC_CAN1_CLK_ENABLE();
-
-
 	  HAL_Delay(1);
 
+
+*/
 	  if(HAL_CAN_Receive(&hcan3, CAN_FIFO0,10) == HAL_OK)
 	  {
 		  j=sprintf(tab,"CAN 3 rece %5i\n",RxMessageCAN3.Data[0]);
-		  if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+		  HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000);
 		  HAL_GPIO_TogglePin(GPIOB, LD2_Pin);
 	  }
 	  else
 	  {
 	    /* Reception Error */
-		  j=sprintf(tab,"!!! CAN 2 receive error !!!\n"); if(HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000)!= HAL_OK) Error_Handler();
+		  j=sprintf(tab,"!!! CAN 2 receive error !!!\n");
+		  HAL_UART_Transmit(&huart3, (uint8_t *)&tab,j,5000);
 	  }
 
 
@@ -432,6 +434,8 @@ void _Error_Handler(char * file, int line)
   /* User can add his own implementation to report the HAL error return state */
   while(1) 
   {
+	  HAL_GPIO_TogglePin(GPIOB, LD2_Pin);
+	  HAL_Delay(1000);
   }
   /* USER CODE END Error_Handler_Debug */ 
 }

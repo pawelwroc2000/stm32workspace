@@ -66,7 +66,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal.o: C:/PM/PM/stm32workspace/CAN_F302R8
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -74,7 +74,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_can.o: C:/PM/PM/stm32workspace/CAN_F3
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -82,7 +82,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_cortex.o: C:/PM/PM/stm32workspace/CAN
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -90,7 +90,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_dma.o: C:/PM/PM/stm32workspace/CAN_F3
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -98,7 +98,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_flash.o: C:/PM/PM/stm32workspace/CAN_
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -106,7 +106,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_flash_ex.o: C:/PM/PM/stm32workspace/C
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -114,7 +114,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_gpio.o: C:/PM/PM/stm32workspace/CAN_F
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -122,7 +122,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_i2c.o: C:/PM/PM/stm32workspace/CAN_F3
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -130,7 +130,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_i2c_ex.o: C:/PM/PM/stm32workspace/CAN
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -138,7 +138,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_pwr.o: C:/PM/PM/stm32workspace/CAN_F3
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -146,7 +146,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_pwr_ex.o: C:/PM/PM/stm32workspace/CAN
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -154,7 +154,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_rcc.o: C:/PM/PM/stm32workspace/CAN_F3
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -162,7 +162,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_rcc_ex.o: C:/PM/PM/stm32workspace/CAN
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -170,7 +170,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_tim.o: C:/PM/PM/stm32workspace/CAN_F3
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -178,7 +178,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_tim_ex.o: C:/PM/PM/stm32workspace/CAN
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -186,7 +186,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_uart.o: C:/PM/PM/stm32workspace/CAN_F
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -194,7 +194,7 @@ Drivers/STM32F3xx_HAL_Driver/stm32f3xx_hal_uart_ex.o: C:/PM/PM/stm32workspace/CA
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F302x8 -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Device/ST/STM32F3xx/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Drivers/CMSIS/Include" -I"C:/PM/PM/stm32workspace/CAN_F302R8/Inc"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
