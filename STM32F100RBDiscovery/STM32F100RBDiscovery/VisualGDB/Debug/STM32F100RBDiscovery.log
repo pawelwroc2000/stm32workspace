@@ -1,0 +1,11 @@
+﻿Build started 2017-12-14 14:47:44.
+     1>Project "C:\PM\PM\stm32workspace\STM32F100RBDiscovery\STM32F100RBDiscovery\STM32F100RBDiscovery.vcxproj" on node 2 (Build target(s)).
+     1>OutputMemoryUtilization:
+         ------------------- Memory utilization report -------------------
+         Used FLASH: 1104 bytes out of 128KB (0%)
+         Used RAM: 28 bytes out of 8192 bytes (0%)
+     1>Done Building Project "C:\PM\PM\stm32workspace\STM32F100RBDiscovery\STM32F100RBDiscovery\STM32F100RBDiscovery.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.12
