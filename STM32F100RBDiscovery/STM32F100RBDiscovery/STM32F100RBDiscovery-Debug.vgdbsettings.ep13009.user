@@ -12,9 +12,40 @@
       <Syscalls />
     </CatchpointConfiguration>
     <MaskInterruptsWhileStepping>false</MaskInterruptsWhileStepping>
-    <MemoryWindowPreferences />
+    <MemoryWindowPreferences>
+      <MemoryWindowPreferences>
+        <ExpressionHistory />
+        <SymbolicMode>true</SymbolicMode>
+        <TakeAddressMode>false</TakeAddressMode>
+        <Format>
+          <DataWidth>OneByte</DataWidth>
+          <DataFormat>Hexadecimal</DataFormat>
+          <TextFormat>ANSI</TextFormat>
+        </Format>
+        <LiveMemorySettings>
+          <Enabled>false</Enabled>
+          <BreakOnChanges>false</BreakOnChanges>
+          <AutoRefresh>false</AutoRefresh>
+          <RefreshTimeout>0</RefreshTimeout>
+        </LiveMemorySettings>
+        <ShowStatusBar>true</ShowStatusBar>
+        <DisplaySymbols>false</DisplaySymbols>
+      </MemoryWindowPreferences>
+    </MemoryWindowPreferences>
     <FavoriteEmbeddedRegisters />
-    <LiveVariables />
+    <LiveVariables>
+      <LiveVariable>
+        <Expression>TIM3-&gt;CNT</Expression>
+        <Type>UInt16</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>true</Plot>
+        <IsCollapsed>false</IsCollapsed>
+      </LiveVariable>
+    </LiveVariables>
     <NestedLiveVariableSettings />
   </DebugPreferences>
 </VisualGDBUserPreferences>

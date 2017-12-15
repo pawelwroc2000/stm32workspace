@@ -1,4 +1,4 @@
-﻿Build started 2017-12-14 18:46:28.
+﻿Build started 2017-12-15 17:57:20.
      1>Project "C:\PM\PM\stm32workspace\STM32F100RBDiscovery\STM32F100RBDiscovery\STM32F100RBDiscovery.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          LEDBlink.c
@@ -10,10 +10,10 @@
          C:\SysGCC\arm-eabi\bin\arm-eabi-objcopy.exe  -O binary C:/PM/PM/stm32workspace/STM32F100RBDiscovery/VisualGDB/Debug/STM32F100RBDiscovery ../VisualGDB/Debug/STM32F100RBDiscovery.bin
        OutputMemoryUtilization:
          ------------------- Memory utilization report -------------------
-         Used FLASH: 1144 bytes out of 128KB (0%)
+         Used FLASH: 1344 bytes out of 128KB (1%) [+4]
          Used RAM: 28 bytes out of 8192 bytes (0%)
      1>Done Building Project "C:\PM\PM\stm32workspace\STM32F100RBDiscovery\STM32F100RBDiscovery\STM32F100RBDiscovery.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.62
+Time Elapsed 00:00:00.67
