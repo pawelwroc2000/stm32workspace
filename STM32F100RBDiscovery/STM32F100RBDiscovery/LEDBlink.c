@@ -7,8 +7,8 @@ extern "C"
 int main(void)
 {
 	
-	__asm("mov R5, #0x000000FE");
-	__asm("mov R5, r4");
+	__asm("mov R0, #0b00001111");
+	__asm("lsr R0, #1");
 	
 	
 	__asm("ldr R6, = 0x40021018");
@@ -37,9 +37,7 @@ int main(void)
 	
 	GPIOC->CRH =  GPIO_CRH_MODE8_0 | GPIO_CRH_MODE9_0;
 	GPIOA->CRL |=  GPIO_CRL_CNF0_0;
-	
-	
-	
+		
 	
 	TIM3->PSC = 7999;
 	TIM3->ARR = 1000;

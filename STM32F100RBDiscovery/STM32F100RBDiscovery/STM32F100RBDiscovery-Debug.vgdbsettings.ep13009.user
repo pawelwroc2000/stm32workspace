@@ -14,7 +14,9 @@
     <MaskInterruptsWhileStepping>false</MaskInterruptsWhileStepping>
     <MemoryWindowPreferences>
       <MemoryWindowPreferences>
-        <ExpressionHistory />
+        <ExpressionHistory>
+          <string>0x20000004</string>
+        </ExpressionHistory>
         <SymbolicMode>true</SymbolicMode>
         <TakeAddressMode>false</TakeAddressMode>
         <Format>
