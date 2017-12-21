@@ -14,8 +14,7 @@ void SysTick_Handler(void)
 void EXTI0_IRQHandler(void)
 {
 	HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_8);
-	EXTI->PR |= EXTI_PR_PIF0;
-	
+	EXTI->PR |= EXTI_PR_PIF0;	
 }
 
 int main(void)
